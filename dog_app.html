@@ -14320,7 +14320,12 @@ Epoch 5/5
 <h2 id="Step-7:-Test-Your-Algorithm">Step 7: Test Your Algorithm<a class="anchor-link" href="#Step-7:-Test-Your-Algorithm">&#182;</a></h2><p>In this section, you will take your new algorithm for a spin!  What kind of dog does the algorithm think that <strong>you</strong> look like?  If you have a dog, does it predict your dog's breed accurately?  If you have a cat, does it mistakenly think that your cat is a dog?</p>
 <h3 id="(IMPLEMENTATION)-Test-Your-Algorithm-on-Sample-Images!">(IMPLEMENTATION) Test Your Algorithm on Sample Images!<a class="anchor-link" href="#(IMPLEMENTATION)-Test-Your-Algorithm-on-Sample-Images!">&#182;</a></h3><p>Test your algorithm at least six images on your computer.  Feel free to use any images you like.  Use at least two human and two dog images.</p>
 <p><strong>Question 6:</strong> Is the output better than you expected :) ?  Or worse :( ?  Provide at least three possible points of improvement for your algorithm.</p>
-<p><strong>Answer:</strong></p>
+<p><strong>Answer:</strong> The output is better than what I expected, even I cannot distinguish between the various breeds of dogs. Following improvements can be applied to algorithm.</p>
+<ul>
+<li>The algorithm cannot detect human faces if they are not facing camera. We can use CNN to imporve human face detection. </li>
+<li>The accuracy of the model can be improved by image Augmentation techniques like Scale Invariance , Rotation Invariance, Translation Invariance </li>
+<li>The algorithm result is unpredicatble in case the image contains both a human as well as a dog. In such scenrio, objection detection should be used followed by recognition over the bounding box of detected dog or human.</li>
+</ul>
 
 </div>
 </div>
