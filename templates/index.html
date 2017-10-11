@@ -1,0 +1,30 @@
+<html>
+  <head><title>Dog Breed Classfication - Harish</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body><h1>Dog Breed Classfication, Design and Maintained By Harish Malan, Sekaran</h1>
+    <div id="content">
+	    <label id="uploadLabel" class="center-block" style="width: 230px;">
+        <button id="uploadFileId" class="btn btn-default action" style="background-color: #549755; border-radius: 0" onclick=" document.getElementById('uploadBtn').click(); ">
+            <span>
+                <img src="/Images/browse-icon.png" style="width: 40px; height: 40px; vertical-align: middle" />&nbsp;
+            </span>
+            Use your own photo <sup>*</sup>
+        </button>
+        <input id="uploadBtn" type="file" accept="image/*" style="visibility: hidden; width: 0px; height: 0px">
+    </label>
+
+
+	<form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+    <strong>Files:</strong><br>
+    <input id="file-picker" type="file" name="file" accept="image/*" multiple>
+    <div id="msg"></div>
+  
+    <input type="submit" value="Upload!" id="upload-button">
+	</form>
+    </div>
+   <script src="scripts.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+  </body>
+</html>
+
